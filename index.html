@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#ea580c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Mompie Pickle - Authentic Homemade Pickles</title>
+    <meta name="description" content="Mompie Pickle brings you authentic homemade pickles made with pure ingredients. Delivering the traditional taste of Assam directly to your doorstep.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="Mompie Food & Beverage">
+                <img src="assets/images/logo.png" alt="Mompie Food & Beverage Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">Our Story</a>
+                <a href="#products">Shop Pickles</a>
+                <a href="#contact" class="btn-primary-outline">Contact Us</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile menu" type="button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Overlay -->
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+        <!-- Mobile Nav Drawer -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-header">
+                <a href="#" class="logo" aria-label="Mompie Food & Beverage">
+                    <img src="assets/images/logo.png" alt="Mompie Food & Beverage Logo" class="logo-img">
+                </a>
+                <button class="close-menu-btn" id="close-menu-btn" aria-label="Close mobile menu" type="button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="#home" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about" class="mobile-link"><i class="fa-solid fa-heart"></i> Our Story</a>
+                <a href="#products" class="mobile-link"><i class="fa-solid fa-jar"></i> Shop Pickles</a>
+                <a href="#contact" class="mobile-link"><i class="fa-solid fa-phone"></i> Contact Us</a>
+            </div>
+            <div class="mobile-nav-footer">
+                <a href="https://wa.me/916003656338?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Mompie%20Pickles!" target="_blank" class="btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Background Slider -->
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slider-track" id="heroSliderTrack">
+                <div class="hero-slide hero-slide-1"></div>
+                <div class="hero-slide hero-slide-2"></div>
+                <div class="hero-slide hero-slide-3"></div>
+            </div>
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content fade-in-up">
+            <span class="badge">Authentic Taste • Homemade Love</span>
+            <h1 class="hero-title">Experience the Magic of <br class="desktop-br"><span class="highlight">Traditional Pickles</span></h1>
+            <p class="hero-subtitle">Made with fresh ingredients, aromatic spices, and traditional family recipes. Every jar brings you the authentic taste of homemade goodness.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn-primary">Discover Our Pickles <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#about" class="btn-secondary">Our Story</a>
+            </div>
+        </div>
+
+        <!-- Slider Navigation Controls -->
+        <button class="hero-arrow hero-arrow-prev" id="heroPrevBtn" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="hero-arrow hero-arrow-next" id="heroNextBtn" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Slider Dots -->
+        <div class="hero-dots" id="heroDots">
+            <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>What Makes Mompie Pickle Special?</h2>
+                <div class="divider"></div>
+                <p>Every jar is crafted with care, bringing together authentic flavours, quality ingredients, and the goodness of tradition.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up delay-1">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3>Carefully Selected Ingredients</h3>
+                    <p>Made with handpicked ingredients and aromatic spices to deliver rich, authentic flavours in every bite.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-2">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-fire-burner"></i>
+                    </div>
+                    <h3>Authentic Assamese Recipes</h3>
+                    <p>Inspired by traditional Assamese recipes and time-honoured methods passed down through generations.</p>
+                </div>
+                <div class="feature-card fade-in-up delay-3">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Made with Love</h3>
+                    <p>Prepared with care in small batches, ensuring every jar carries the warmth and taste of homemade goodness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Explore Our Signature Pickles</h2>
+                <div class="divider"></div>
+                <p>Found your favourite? Place your order directly through WhatsApp or Email!</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card fade-in-up delay-1">
+                    <div class="product-img-wrapper">
+                        <img src="assets/images/pork.png" alt="Pork Pickle" class="product-img">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Spicy Pork Pickle</h3>
+                        <p class="product-desc">Tender pork pieces blended with aromatic spices and rich flavours for a deliciously satisfying experience.</p>
+                        <div class="order-actions">
+                            <a href="https://wa.me/916003656338?text=Hi,%20I%20would%20like%20to%20order%20the%20Spicy%20Pork%20Pickle!" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:chanchaltaye18@gmail.com?subject=Order%20Inquiry%3A%20Pork%20Pickle" class="btn-email"><i class="fa-regular fa-envelope"></i> Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card fade-in-up delay-2">
+                    <div class="product-img-wrapper">
+                        <img src="assets/images/chicken.png" alt="Chicken Pickle" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3>Authentic Chicken Pickle</h3>
+                        <p class="product-desc">Juicy chicken pieces infused with traditional spices, creating a rich and flavourful homemade delicacy.</p>
+                        <div class="order-actions">
+                            <a href="https://wa.me/916003656338?text=Hi,%20I%20would%20like%20to%20order%20the%20Authentic%20Chicken%20Pickle!" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:chanchaltaye18@gmail.com?subject=Order%20Inquiry%3A%20Chicken%20Pickle" class="btn-email"><i class="fa-regular fa-envelope"></i> Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card fade-in-up delay-3">
+                    <div class="product-img-wrapper">
+                        <img src="assets/images/veg.png" alt="Mixed Veg Pickle" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3>Traditional Mixed Veg Pickle</h3>
+                        <p class="product-desc">A delightful combination of seasonal vegetables, tangy mango, and aromatic spices.</p>
+                        <div class="order-actions">
+                            <a href="https://wa.me/916003656338?text=Hi,%20I%20would%20like%20to%20order%20the%20Traditional%20Mixed%20Veg%20Pickle!" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:chanchaltaye18@gmail.com?subject=Order%20Inquiry%3A%20Mixed%20Veg%20Pickle" class="btn-email"><i class="fa-regular fa-envelope"></i> Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card fade-in-up delay-4">
+                    <div class="product-img-wrapper">
+                        <img src="assets/images/lemon.png" alt="Lemon Khatta Meetha Pickle" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3>Lemon Khatta Meetha Pickle</h3>
+                        <p class="product-desc">Sun-ripened juicy lemons cured with traditional spices, delivering the timeless sweet, sour, and zesty burst of flavours.</p>
+                        <div class="order-actions">
+                            <a href="https://wa.me/916003656338?text=Hi,%20I%20would%20like%20to%20order%20the%20Lemon%20Khatta%20Meetha%20Pickle!" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:chanchaltaye18@gmail.com?subject=Order%20Inquiry%3A%20Lemon%20Khatta%20Meetha%20Pickle" class="btn-email"><i class="fa-regular fa-envelope"></i> Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card fade-in-up delay-1">
+                    <div class="product-img-wrapper">
+                        <img src="assets/images/bamboo.png" alt="Crispy Bamboo Shoot Pickle" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3>Crispy Bamboo Shoot Pickle</h3>
+                        <p class="product-desc">Tender and crunchy young bamboo shoots cured in pure mustard oil, fenugreek, and authentic spices for a distinctive earthy tang.</p>
+                        <div class="order-actions">
+                            <a href="https://wa.me/916003656338?text=Hi,%20I%20would%20like%20to%20order%20the%20Crispy%20Bamboo%20Shoot%20Pickle!" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:chanchaltaye18@gmail.com?subject=Order%20Inquiry%3A%20Bamboo%20Shoot%20Pickle" class="btn-email"><i class="fa-regular fa-envelope"></i> Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card fade-in-up delay-2">
+                    <div class="product-img-wrapper">
+                        <img src="assets/images/Bhut%20jolokia.png" alt="Fiery Bhoot Jolokia Pickle" class="product-img">
+                        <div class="product-badge">Extra Hot</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Fiery Bhoot Jolokia Pickle</h3>
+                        <p class="product-desc">Crafted with legendary Assam ghost peppers (Bhoot Jolokia), delivering an intensely fiery aroma and bold spice kick for true chili lovers.</p>
+                        <div class="order-actions">
+                            <a href="https://wa.me/916003656338?text=Hi,%20I%20would%20like%20to%20order%20the%20Fiery%20Bhoot%20Jolokia%20Pickle!" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:chanchaltaye18@gmail.com?subject=Order%20Inquiry%3A%20Bhoot%20Jolokia%20Pickle" class="btn-email"><i class="fa-regular fa-envelope"></i> Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card fade-in-up delay-3">
+                    <div class="product-img-wrapper">
+                        <img src="assets/images/meetha%20bogori.png" alt="Sweet Meetha Bogori Pickle" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3>Sweet Meetha Bogori Pickle</h3>
+                        <p class="product-desc">Wild Assam jujube berries (bogori) slow-simmered with jaggery and roasted spices for that irresistible, nostalgic sweet and sour punch.</p>
+                        <div class="order-actions">
+                            <a href="https://wa.me/916003656338?text=Hi,%20I%20would%20like%20to%20order%20the%20Sweet%20Meetha%20Bogori%20Pickle!" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:chanchaltaye18@gmail.com?subject=Order%20Inquiry%3A%20Meetha%20Bogori%20Pickle" class="btn-email"><i class="fa-regular fa-envelope"></i> Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card fade-in-up delay-4">
+                    <div class="product-img-wrapper">
+                        <img src="assets/images/jalphai.png" alt="Traditional Jalphai Pickle" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3>Traditional Jalphai Pickle</h3>
+                        <p class="product-desc">Fresh Indian olives (jalphai) seasoned with crushed mustard seeds and time-honoured spices to create a mouth-watering sour relish.</p>
+                        <div class="order-actions">
+                            <a href="https://wa.me/916003656338?text=Hi,%20I%20would%20like%20to%20order%20the%20Traditional%20Jalphai%20Pickle!" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                            <a href="mailto:chanchaltaye18@gmail.com?subject=Order%20Inquiry%3A%20Jalphai%20Pickle" class="btn-email"><i class="fa-regular fa-envelope"></i> Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="how-it-works-content fade-in">
+                <h2>Ordering Made Easy</h2>
+                <div class="divider mx-auto"></div>
+                <p>Getting your favourite homemade pickles is just a few clicks away. No complicated checkout, just easy and personal ordering.</p>
+                
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-num">
+                            <i class="fa-solid fa-compass"></i>
+                            <span class="step-count">1</span>
+                        </div>
+                        <div class="step-text">
+                            <h4>Explore</h4>
+                            <p>Browse our collection and choose your favourite pickle.</p>
+                        </div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-num">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span class="step-count">2</span>
+                        </div>
+                        <div class="step-text">
+                            <h4>Place Your Order</h4>
+                            <p>Reach out to us through WhatsApp or Email.</p>
+                        </div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-num">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="step-count">3</span>
+                        </div>
+                        <div class="step-text">
+                            <h4>Confirmation</h4>
+                            <p>We'll connect with you to confirm your order details.</p>
+                        </div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-num">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <span class="step-count">4</span>
+                        </div>
+                        <div class="step-text">
+                            <h4>Delivered</h4>
+                            <p>Sit back and enjoy authentic homemade flavours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo" aria-label="Mompie Food & Beverage">
+                    <img src="assets/images/logo.png" alt="Mompie Food & Beverage Logo" class="logo-img">
+                </a>
+                <p>Bringing authentic homemade taste to your table since day one. Crafted with love, spices, and tradition.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#products">Shop Pickles</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/916003656338" target="_blank">+91 60036 56338</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:chanchaltaye18@gmail.com">chanchaltaye18@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mompie Pickle. All Rights Reserved. Made with <i class="fa-solid fa-heart" style="color: var(--primary-color);"></i></p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
